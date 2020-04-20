@@ -124,7 +124,7 @@
 		</excludes>
 		<archive>
 		  <manifest>
-		      <mainClass>com.mkyong.core.utils.App</mainClass>
+		      <mainClass>me.badbones69.crazyenchantments.Main</mainClass>
 		  </manifest>
 		</archive>
 	       </configuration>
