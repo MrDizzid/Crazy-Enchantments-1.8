@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>crazyenchantments</artifactId>
+        <groupId>me.badbones69</groupId>
+        <version>1.8-Dev-Build-v8.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>crazyenchantments-plugin</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>me.badbones69</groupId>
+            <artifactId>crazyenchantments-v1_13_up</artifactId>
+            <version>1.8-Dev-Build-v8.1</version>
+            <type>jar</type>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>me.badbones69</groupId>
+            <artifactId>crazyenchantments-v1_12_2_down</artifactId>
+            <version>1.8-Dev-Build-v8.1</version>
+            <type>jar</type>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>me.badbones69</groupId>
+            <artifactId>crazyenchantments-factions</artifactId>
+            <version>1.8-Dev-Build-v8.1</version>
+            <type>jar</type>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>me.badbones69</groupId>
+            <artifactId>crazyenchantments-saber-factions</artifactId>
+            <version>1.8-Dev-Build-v8.1</version>
+            <type>jar</type>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>me.badbones69</groupId>
+            <artifactId>crazyenchantments-api</artifactId>
+            <version>1.8-Dev-Build-v8.1</version>
+            <type>jar</type>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency> <!-- Spigot-Api -->
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.15.2-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- MCMMO -->
+            <groupId>com.gmail.nossr50.mcMMO</groupId>
+            <artifactId>mcMMO</artifactId>
+            <version>2.1.107</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>slf4j-api</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>snakeyaml</artifactId>
+                    <groupId>org.yaml</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>worldedit-core</artifactId>
+                    <groupId>com.sk89q.worldedit</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>worldguard-core</artifactId>
+                    <groupId>com.sk89q.worldguard</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency> <!-- Vault -->
+            <groupId>net.milkbowl.vault</groupId>
+            <artifactId>VaultAPI</artifactId>
+            <version>1.6</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.bukkit</groupId>
+                    <artifactId>bukkit</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency> <!-- PreciousStones -->
+            <groupId>net.sacredlabyrinth.Phaed</groupId>
+            <artifactId>PreciousStones</artifactId>
+            <version>10.7.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- MassiveCraft -->
+            <groupId>com.massivecraft</groupId>
+            <artifactId>MassiveCraft</artifactId>
+            <version>2.13.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- OG SilkSpawners -->
+            <groupId>de.dustplanet</groupId>
+            <artifactId>SilkSpawners</artifactId>
+            <version>5.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- Fork SilkSpawners https://www.spigotmc.org/resources/60063 -->
+            <groupId>de.candc</groupId>
+            <artifactId>SilkSpawners</artifactId>
+            <version>1.6</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- Feudal -->
+            <groupId>us.forseth11.feudal.core</groupId>
+            <artifactId>Feudal</artifactId>
+            <version>1.14.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- ASkyBlock -->
+            <groupId>com.wasteofplastic</groupId>
+            <artifactId>askyblock</artifactId>
+            <version>3.0.8.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.wasteofplastic</groupId>
+            <artifactId>acidisland</artifactId>
+            <version>3.0.8.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- Kingdoms -->
+            <groupId>org.kingdoms.main</groupId>
+            <artifactId>Kingdoms</artifactId>
+            <version>13.2.40</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- Grief Prevention -->
+            <groupId>com.github.TechFortress</groupId>
+            <artifactId>GriefPrevention</artifactId>
+            <version>16.13.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- Spartan -->
+            <groupId>me.vagdedes.spartan</groupId>
+            <artifactId>Spartan</artifactId>
+            <version>Build-269</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- StackMob 3 -->
+            <groupId>com.github.Nathat23</groupId>
+            <artifactId>StackMob-3</artifactId>
+            <version>4.0.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- No Cheat Plus -->
+            <groupId>fr.neatmonster</groupId>
+            <artifactId>nocheatplus</artifactId>
+            <version>3.16.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- Dakata Anti Cheat -->
+            <groupId>DAKATA.Main</groupId>
+            <artifactId>DakataAntiCheat</artifactId>
+            <version>BETA-1.8</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- AAC -->
+            <groupId>de.janmm14</groupId>
+            <artifactId>aac-api</artifactId>
+            <version>3.3.12</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- General Lib -->
+            <groupId>org.generallib.main</groupId>
+            <artifactId>GeneralLib</artifactId>
+            <version>0.1.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- Towny -->
+            <groupId>com.palmergames.bukkit.towny</groupId>
+            <artifactId>Towny</artifactId>
+            <version>0.95.2.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- Legacy Factions -->
+            <groupId>com.github.redstone</groupId>
+            <artifactId>LegacyFactions</artifactId>
+            <version>1.4.7</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- Epic Spawners -->
+            <groupId>com.songoda.epicspawners</groupId>
+            <artifactId>EpicSpawners</artifactId>
+            <version>3.1.4-R2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency> <!-- PlotSquared -->
+            <groupId>com.github.intellectualsites.plotsquared</groupId>
+            <artifactId>PlotSquared-API</artifactId>
+            <version>latest</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency> <!-- SuperiorSkyblockAPI -->
+            <groupId>com.github.OmerBenGera</groupId>
+            <artifactId>SuperiorSkyblockAPI</artifactId>
+            <version>b11</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.parent.name}[v${project.version}]</finalName>
+        <defaultGoal>clean install package</defaultGoal>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.1</version>
+                <configuration>
+                    <artifactSet>
+                        <includes>
+                            <include>me.badbones69:*</include>
+                            <include>com.github.Carleslc:*</include>
+                        </includes>
+                    </artifactSet>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
