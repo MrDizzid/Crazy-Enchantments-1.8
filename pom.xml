@@ -114,22 +114,6 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-                 
-	   <plugin>
-	       <groupId>org.apache.maven.plugins</groupId>
-	       <artifactId>maven-jar-plugin</artifactId>
-	       <configuration>
-		<excludes>
-		  <exclude>**/log4j.properties</exclude>
-		</excludes>
-		<archive>
-		  <manifest>
-		      <mainClass>me.badbones69.crazyenchantments.Main</mainClass>
-		  </manifest>
-		</archive>
-	       </configuration>
-             </plugin>
-
         </plugins>
     </build>
 
