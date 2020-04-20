@@ -216,36 +216,35 @@
     </dependencies>
 
     <build>
-        <finalName>${project.parent.name}[v${project.version}]</finalName>
-        <defaultGoal>clean install package</defaultGoal>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
+        <defaultGoal>clean package install</defaultGoal>
+        <finalName>${project.name}</finalName>
+        <sourceDirectory>src/main/java</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.1</version>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
                 <configuration>
-                    <artifactSet>
-                        <includes>
-                            <include>me.badbones69:*</include>
-                            <include>com.github.Carleslc:*</include>
-                        </includes>
-                    </artifactSet>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
+                 
+	   <plugin>
+	       <groupId>org.apache.maven.plugins</groupId>
+	       <artifactId>maven-jar-plugin</artifactId>
+	       <configuration>
+		<excludes>
+		  <exclude>**/log4j.properties</exclude>
+		</excludes>
+		<archive>
+		  <manifest>
+		      <mainClass>me.badbones69.crazyenchantments.Main</mainClass>
+		  </manifest>
+		</archive>
+	       </configuration>
+             </plugin>
+
         </plugins>
     </build>
 
