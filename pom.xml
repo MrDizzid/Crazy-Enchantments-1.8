@@ -99,7 +99,8 @@
             <url>https://nexus.savagelabs.net/repository/maven-public/</url>
         </repository>
     </repositories>
-
+         
+    <!--
     <build>
         <defaultGoal>clean package install</defaultGoal>
         <finalName>${project.name}</finalName>
@@ -116,5 +117,6 @@
             </plugin>
         </plugins>
     </build>
+-->
 
 </project>
