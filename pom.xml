@@ -12,8 +12,8 @@
     <modules>
         <module>api</module>
         <module>plugin</module>
-        <module>v1_12_2_down</module>
-        <!-- module>v1_13_up</module -->
+        <!-- module>v1_12_2_down</module -->
+        <!-- module>v1_13_up</module     -->
         <module>factions</module>
         <module>saber-factions</module>
     </modules>
