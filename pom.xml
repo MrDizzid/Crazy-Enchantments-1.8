@@ -114,6 +114,22 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+                 
+	   <plugin>
+	       <groupId>org.apache.maven.plugins</groupId>
+	       <artifactId>maven-jar-plugin</artifactId>
+	       <configuration>
+		<excludes>
+		  <exclude>**/log4j.properties</exclude>
+		</excludes>
+		<archive>
+		  <manifest>
+		      <mainClass>com.mkyong.core.utils.App</mainClass>
+		  </manifest>
+		</archive>
+	       </configuration>
+             </plugin>
+
         </plugins>
     </build>
 
